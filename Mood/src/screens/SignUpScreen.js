@@ -19,7 +19,7 @@ export default function SignUpScreen() {
     try {
         // Check if any field is empty
         if (!username || !email || !password) {
-            alert('Invalid Input', 'Please fill all fields');
+            setError('Please fill all fields');
             return;
         }
         // Validate username first
@@ -74,11 +74,15 @@ export default function SignUpScreen() {
     
         alert('Success', 'Signup successful!');
         console.log("Signup Successful!");
-        navigation.navigate("ProfileLogin",{userId:user.uid});
+        // Replace navigation.navigate with navigation.reset
+        navigation.reset({
+            index: 0,
+            routes: [{ name: 'ProfileLogin', params: { userId: user.uid } }],
+        });
         
     } catch (error) {
-        setError("Signing up failed!");
-        console.log(error);
+        setError(error.message || "Signing up failed!");
+        console.log("Signup Error:", error);
     }
   };
 

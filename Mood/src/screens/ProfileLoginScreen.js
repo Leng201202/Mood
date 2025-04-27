@@ -71,7 +71,10 @@ const ProfileLoginScreen = ({ route, navigation }) => {
     try {
       await signOut(auth);
       console.log("User logged out successfully!");
-      navigation.navigate("Login");
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Login' }],
+      });
     } catch (error) {
       console.error("Error logging out:", error);
     }

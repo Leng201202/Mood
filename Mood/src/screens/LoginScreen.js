@@ -60,6 +60,12 @@ export default function LoginScreen() {
       const userDoc = await getDoc(doc(db, "Users", user.uid));
       if(userDoc.exists()){
         alert('User Login Success');
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Tab' }],
+        });
+      } else {
+        setError("User data not found");
       }
       navigation.navigate("ProfileLogin", { userId: user.uid });
     } catch (error) {
