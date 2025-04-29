@@ -2,10 +2,11 @@
 Final exam 
 ชื่อ - นามสกุล (Full Name): Sai Shang Hlang
 รหัสนักศึกษา (Student ID): 6631503129
-ชื่อแอป (App Name): Mood
+ชื่อแอป (App Name): Mood Tracker
+ประเภทแอป (App Type): Mobile App
 Framework ที่ใช้ (Framework Used): React Native & Firebase
-ลิงก์ GitHub Repository: 
-ลิงก์ไฟล์ติดตั้ง (APK/IPA): [ใส่ลิงก์ที่นี่ | Insert link here]
+ลิงก์ GitHub Repository: https://github.com/Leng201202/Mood.git
+ลิงก์ไฟล์ติดตั้ง (APK/IPA): https://expo.dev/accounts/6631503129/projects/Mood/builds/5089dde4-1811-4cb6-8b6c-d97ad7c9b5a1
 
 1. การออกแบบแอป | App Concept and Design (2 คะแนน / 2 pts)
 1.1 ผู้ใช้งานเป้าหมาย | User Personas
