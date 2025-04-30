@@ -6,7 +6,7 @@ function ProfileScreen(route) {
     const navigation = useNavigation();
   return (
     <View style={[styles.container,{ backgroundColor: mood?.color + '50' }]}>
-      <Text style={styles.title}>Haven't you Sign in?</Text>
+      <Text style={styles.title}>Ready to track your Mood?</Text>
       <View style={styles.btnContainer}>
         <TouchableOpacity onPress={()=>navigation.navigate('Login')}>
             <View style={styles.btn}>

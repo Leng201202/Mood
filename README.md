@@ -10,71 +10,82 @@ Framework ที่ใช้ (Framework Used): React Native & Firebase
 
 1. การออกแบบแอป | App Concept and Design (2 คะแนน / 2 pts)
 1.1 ผู้ใช้งานเป้าหมาย | User Personas
-ตัวอย่าง (Example):
+ตัวอย่าง (Example): 
+Username: Student123
+Password: Password123
+Email: student123@gmail.com
 
-Persona 1:  
-- ชื่อ: นัท  
-- อายุ: 20 ปี  
-- อาชีพ: นักศึกษาปี 2  
-- ความต้องการ: ต้องการจัดตารางเรียนและเตือนสอบให้มีวินัยมากขึ้น
 
-Persona 2:  
-- ชื่อ: แพรว  
-- อายุ: 22 ปี  
-- อาชีพ: นักศึกษาฝึกงาน  
-- ความต้องการ: ต้องการวางแผนงานและกำหนดเป้าหมายประจำสัปดาห์
 1.2 เป้าหมายของแอป | App Goals
-ตัวอย่าง (Example):
+Mood Tracker: The Mood Tracker app is designed to help users monitor and track their emotional well-being over time. It serves as a personal emotional diary that allows users to:
 
-- ช่วยนักศึกษาจัดตารางเรียนรายสัปดาห์
-- เพิ่มระบบเตือนสอบและงานที่ต้องส่ง
-- มีหน้าแดชบอร์ดรวมกิจกรรมประจำวัน
+1. Record daily mood states and emotions
+2. Track emotional patterns and trends
+3. Maintain a digital journal of their emotional journey
+4. Get insights into their emotional well-being
+5. Set reminders for mood check-ins
+
+
 1.3 โครงร่างหน้าจอ / Mockup
 ใส่รูปภาพ หรือคำอธิบายแต่ละหน้าหลัก 3 หน้า | Attach image or describe 3 main pages
 
 1.4 การไหลของผู้ใช้งาน | User Flow
-ตัวอย่าง (Example):
-
-เปิดแอป > เข้าหน้าแดชบอร์ด > เลือก "เพิ่มงาน" > บันทึก > ตั้งเตือน
+ตัวอย่าง (Example): Mood Tracker
+- User opens the app
+- User logs in or creates an account
+- User navigates to the mood tracking screen
+- User selects a mood state
+- User enters additional notes
+- User saves the mood entry
+- User views their mood history
+- User navigates to the settings screen
+- User updates their account information
+- User logs out
 2. การพัฒนาแอป | App Implementation (4 คะแนน / 4 pts)
 2.1 รายละเอียดการพัฒนา | Development Details
 เครื่องมือที่ใช้ / Tools used:
 
-- Flutter 3.19
-- Dart 3.2
+- React native
+- Javascript
+- Firebase
 - Package: Provider, SharedPreferences
 2.2 ฟังก์ชันที่พัฒนา | Features Implemented
 Checklist:
 
-- [x] เพิ่ม / แก้ไข / ลบ ตารางเรียน
-- [x] ตั้งเตือนกิจกรรม
-- [x] บันทึกงานที่ต้องทำ
-- [ ] ซิงก์กับ Google Calendar
+- [x] Add, Edit, Delete Account
+- [x] Store Mood detail as a History
+- [x] Retrieve Mood detail from Firebase
+- [ ] Google Calendar
 2.3 ภาพหน้าจอแอป | App Screenshots
 แนบภาพหรือ URL (Attach images or image links):
 
-- ![Dashboard](dashboard.png)
-- ![Schedule](schedule.png)
-- ![Reminder](reminder.png)
+- [Home](/Mood/assets/Home.jpg)
+- [AddMood](/Mood/assets/AddMood.jpg)
+- [Profile](/Mood/assets/Profile.jpg)
 3. การ Build และติดตั้งแอป | Deployment (2 คะแนน / 2 pts)
 3.1 ประเภท Build | Build Type
 [x] Debug
-[ ] Release
+[x] Release
 3.2 แพลตฟอร์มที่ทดสอบ | Platform Tested
 [x] Android
 [ ] iOS
 3.3 ไฟล์ README และวิธีติดตั้ง | README & Install Guide
 แนบไฟล์หรือคำอธิบายการติดตั้งแอป | Insert steps
 
-1. ดาวน์โหลดไฟล์ .apk
-2. เปิดในอุปกรณ์ Android
-3. ติดตั้งผ่าน File Manager
-4. การสะท้อนผลลัพธ์ | Reflection (2 คะแนน / 2 pts)
+1. app-release.apk
+2. cd android/app/build/outputs/apk/release/app-release.apk
+3. adb install app-release.apk
+Reflection (2 คะแนน / 2 pts)
 ตัวอย่างหัวข้อ | Suggested points:
 
-- พบปัญหาเวลาใช้ setState กับ async function
-- เรียนรู้การใช้ Provider ในการจัดการสถานะ
-- หากมีเวลา จะเพิ่มฟีเจอร์ login และ Firebase sync
+Developing the Mood Tracker app has been a rewarding learning experience. Throughout the project, I encountered challenges with managing asynchronous operations in React Native, especially when updating state after interacting with Firebase. This led me to explore and adopt Provider for more effective state management, which improved the reliability and maintainability of the app.
+
+Integrating Firebase for authentication and data storage allowed me to implement secure user accounts and real-time mood history tracking. Building features such as adding, editing, and deleting accounts, as well as storing and retrieving mood details, helped me deepen my understanding of both React Native and Firebase.
+
+Additionally, I leveraged AI tools to assist with idea generation, UI design, debugging, and deployment. This not only accelerated development but also provided valuable insights and solutions to technical problems.
+
+If I had more time, I would enhance the app by adding Google Calendar integration, more advanced analytics for mood trends, and further improving the user interface. Overall, this project strengthened my skills in mobile app development and gave me practical experience in delivering a complete application from concept to deployment.
+
 5. การใช้ AI ช่วยพัฒนา | AI Assisted Development (Bonus / ใช้ประกอบการพิจารณา)
 5.1 ใช้ AI ช่วยคิดไอเดีย | Idea Generation
 Prompt ที่ใช้:  
@@ -84,25 +95,14 @@ Prompt ที่ใช้:
 ได้ไอเดียแอปจัดตารางเรียนและระบบเตือนอัตโนมัติ
 5.2 ใช้ AI ช่วยออกแบบ UI | UI Layout Prompt
 Prompt ที่ใช้:  
-"Design a simple layout for a schedule and reminder app in Flutter."
+"Design a simple layout for a Mood Tracker app in React Native."
 
-ผลลัพธ์:  
-ได้ code structure ของ Scaffold 3 หน้า
-5.3 ใช้ AI ช่วยเขียนโค้ด | Code Writing Prompt
-Prompt ที่ใช้:  
-"Flutter code to create a ListView with editable schedule items."
-
-ผลลัพธ์:  
-นำไปปรับกับ logic ของแอป เพิ่มปุ่มแก้ไข
-5.4 ใช้ AI ช่วย debug | Debug Prompt
-Prompt ที่ใช้:  
-"My Flutter app crashes when I try to add an item. Here's the error: [แนบ error log]"
 
 ผลลัพธ์:  
 AI แนะนำให้ตรวจสอบ null และวิธีแก้ไข
 5.5 ใช้ AI ช่วย Deploy | Deployment Prompt
 Prompt ที่ใช้:  
-"How to build Flutter app as APK and test on Android?"
+"How to build React Native app as APK and test on Android?"
 
 ผลลัพธ์:  
 คำสั่ง flutter build apk --release พร้อมวิธีติดตั้ง
